@@ -1,1 +1,179 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jacob & Alyssa | Wedding RSVP</title><style>*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#252525;font-family:Arial,sans-serif}.page{max-width:740px;margin:32px auto;padding:24px;background:white;box-shadow:0 8px 35px #0001}.invite{width:100%;display:block}h1{font:normal 34px Georgia,serif;text-align:center}p{text-align:center;letter-spacing:.15em;text-transform:uppercase;font-size:12px}iframe{width:100%;height:900px;border:0}@media(max-width:700px){.page{margin:0;padding:0}}</style></head><body><main class="page"><img class="invite" src="save-the-date.jpg" alt="Jacob and Alyssa: save the date, 4 September 2027"><h1>We'd love to celebrate with you</h1><p>Please respond below</p><iframe id="rsvp" title="Wedding RSVP" referrerpolicy="no-referrer"></iframe><p id="setup" hidden>Website owner: connect Google Apps Script in index.html.</p></main><script>const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbwUkkmMtFpJ6DbHW0D60kCnUD65rpTrv63ZHe5NGYYuzWWmWKl71EcNUJFr_YmUfAaK/exec';if(APPS_SCRIPT_URL.startsWith('PASTE_')){document.getElementById('rsvp').hidden=true;document.getElementById('setup').hidden=false}else document.getElementById('rsvp').src=APPS_SCRIPT_URL;</script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jacob & Alyssa | Wedding RSVP</title>
+  <meta name="description"
+        content="Celebrate with Jacob and Alyssa on 4 September 2027. RSVP here!">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f6f4f0;
+      color: #242424;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      max-width: 740px;
+      margin: 32px auto;
+      background: white;
+      padding: 24px;
+      box-shadow: 0 14px 55px rgba(0,0,0,0.07);
+    }
+
+    .invite {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      padding: 30px 20px 45px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 6vw, 42px);
+      font-weight: normal;
+      line-height: 1.2;
+      margin: 10px 0 20px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .divider {
+      width: 100px;
+      height: 1px;
+      background: #d8d3ce;
+      margin: 30px auto;
+    }
+
+    .date {
+      font-size: 13px;
+      letter-spacing: 3px;
+      line-height: 2.2;
+      text-transform: uppercase;
+    }
+
+    .rsvp-button {
+      display: block;
+      width: 100%;
+      max-width: 350px;
+      margin: 35px auto 15px;
+      padding: 20px 25px;
+      background: #252525;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 2px;
+      transition: background 0.2s ease;
+    }
+
+    .rsvp-button:hover,
+    .rsvp-button:focus {
+      background: #55504b;
+    }
+
+    .small-text {
+      font-size: 12px;
+      color: #777;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 0 20px 30px;
+      text-align: center;
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      .content {
+        padding: 30px 22px 40px;
+      }
+
+      h1 {
+        font-size: clamp(29px, 8vw, 42px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- Your existing Save the Date image -->
+    <img
+      class="invite"
+      src="save-the-date.jpg"
+      alt="Jacob and Alyssa Save the Date"
+    >
+
+    <div class="content">
+
+      <h1>We'd love to celebrate with you</h1>
+
+      <p class="subtitle">
+        Please respond using the link below
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="date">
+        4 September 2027<br>
+        7:00 PM<br>
+        Ruby's at the Grand<br>
+        Southampton
+      </div>
+
+      <!-- RSVP button -->
+      <a
+        id="rsvp-button"
+        class="rsvp-button"
+        href="https://script.google.com/macros/s/AKfycbwUkkmMtFpJ6DbHW0D60kCnUD65rpTrv63ZHe5NGYYuzWWmWKl71EcNUJFr_YmUfAaK/exec"
+      >
+        Click here to RSVP
+      </a>
+
+      <p class="small-text">
+        You'll be asked to enter your four-digit
+        wedding PIN before completing your RSVP.
+      </p>
+
+    </div>
+
+    <footer>
+      Jacob & Alyssa
+    </footer>
+
+  </main>
+
+</body>
+</html>
